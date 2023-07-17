@@ -1,0 +1,49 @@
+
+.skill_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex;
+    justify-content: space-around; */
+    gap: 2rem;
+}
+.skill span:nth-of-type(1){
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.skill span:nth-of-type(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.skill_container> div{
+    background: var(--orangeCard);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    margin-top: 2rem;
+
+}
+.skill>.heading{
+    /* align-items: center; */
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+.skill_container> div:hover{
+    background: transparent;
+    border-color: var(--orange);
+    cursor: pointer;
+}
+.skill_container> div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--black);
+    
+}
+.skill_content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 2rem;
+    /* justify-content: space-around; */
+}
