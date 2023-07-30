@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Experience.css";
 import heartimoji from "../../img/heartemoji.png";
 import glasses from "../../img/glasses.png";
 import humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import Resume from '../experience/NidhiVermaResume.pdf'
+import { themeContext } from "../../Context";
 const Experience = () => {
+ 
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="experience">
       <div className="leftexp">
-        <span>My </span>
+        <span style={{color: darkMode?'white':''}}>My </span>
         <span>Experience</span>
-        <span>
+        <span style={{color: darkMode?'white':''}}>
           Lorem ipsum dolor sit amet  elit. Molestias
           reiciendis asperiores eaque voluptatem accusamus velit, vitae
           <br/>

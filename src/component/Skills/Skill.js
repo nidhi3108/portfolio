@@ -1,14 +1,17 @@
-import React  from "react"
+import React ,{useContext} from "react"
 import  "./Skill.css"
+import { themeContext } from "../../Context";
 
 import {BsPatchCheckFill} from 'react-icons/bs'
 
 const Skill=  ()=>{
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
     return(
         <>
         <section className="skill">
             <div className="heading">
-            <span>What Skill I have</span>
+            <span style={{color: darkMode?'white':''}}>What Skill I have</span>
             <br/>
             <span>My Skills</span>
             </div>

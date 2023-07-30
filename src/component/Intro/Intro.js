@@ -1,4 +1,4 @@
-import React, { NavLink } from 'react'
+import React, { NavLink, useContext } from 'react'
 import './Intro.css'
 import github from '../../img/github.png'
 import linkedin from '../../img/linkedin.png'
@@ -10,17 +10,20 @@ import thumbup from '../../img/thumbup.png'
 import crown from '../../img/crown.png'
 import glassesimoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import { themeContext } from "../../Context";
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <>
 
       <div className="intro">
         <div className="i-left">
           <div className="i-name">
-            <span>Hey! I am</span>
+            <span style={{color: darkMode?'white':''}} >Hey! I am</span>
             <span>Nidhi Verma</span>
-            <span>
+            <span style={{color: darkMode?'white':''}}>
               Full stack developer with high level of experience in we designing and mern stack developement
             </span>
           </div>
