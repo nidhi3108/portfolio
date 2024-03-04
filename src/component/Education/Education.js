@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import "./Experience.css";
+import "./Education.css";
 import heartimoji from "../../img/heartemoji.png";
 import glasses from "../../img/glasses.png";
 import humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import Resume from '../experience/NidhiVermaResume.pdf'
 import { themeContext } from "../../Context";
-const Experience = () => {
+const Education = () => {
  
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -14,7 +14,7 @@ const Experience = () => {
     <div className="experience">
       <div className="leftexp">
         <span style={{color: darkMode?'white':''}}>My </span>
-        <span>Experience</span>
+        <span>Education</span>
         <span style={{color: darkMode?'white':''}}>
           Lorem ipsum dolor sit amet  elit. Molestias
           reiciendis asperiores eaque voluptatem accusamus velit, vitae
@@ -22,10 +22,10 @@ const Experience = () => {
           nesciunt neque, molestiae, corrupti ratione! Tempora, rerum impedit.
           Sequi id maiores mollitia amet. Sed.
         </span>
-        <a href={Resume} download>
+        {/* <a href={Resume} download>
 
         <button className="button s-button">Download CV</button>
-        </a>
+        </a> */}
         <div className="blur s-blurl" style={{background:'#ABF1FF94'}}></div>
       </div>
       {/* right side */}
@@ -33,9 +33,9 @@ const Experience = () => {
         <div style={{left:'14rem'}}>
           <Card 
           emoji={heartimoji}
-          heading={'Jr. Frontend Developer'}
-          detail={'Beesolver Technology Pvt Ltd'}
-          description={"Collaborated with in-house web designers to create innovative UI design."}
+          heading={'B.Tech in CSE'}
+          detail={'R.R. Institute Of Modern Technology'}
+          description={'07/2019-07/2023'}
           />
 
         </div>
@@ -43,18 +43,18 @@ const Experience = () => {
         <div style={{top:"12rem",left:"-4rem"}}>
           <Card 
           emoji={glasses}
-          heading={'Web Developer Intern'}
-          detail={'Netgains-it & digital marketing'}
-          description={"Work on developing web applications on Shopify and WordPress to meet client needs"}
+          heading={'Senior Secondary Education'}
+          detail={'Sita Inter College'}
+          description={'07/2017-07/2018'}
           />
 
         </div>
         <div style={{top:"19rem",left:"12rem"}}>
           <Card 
           emoji={humble}
-          heading={'Summer Trainne - MERN Stack'}
-          detail={'Digipodium Pvt Ltd'}
-          description={'Acquiring skills for MERN stack development.'}
+          heading={'Secondary Education'}
+          detail={'Ram Janki Inter College'}
+          description={'07/2015-07/2016'}
           />
 
         </div>
@@ -63,4 +63,4 @@ const Experience = () => {
     </div>
   );
 };
-export default Experience;
+export default Education;

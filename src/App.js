@@ -2,10 +2,11 @@ import Navbar from "./component/Navbar/Navbar";
 import './App.css'
 import Intro from "./component/Intro/Intro.js";
 import Experience from "./component/experience/Experience.js";
-import Skill from "./component/Skills/Skill";
 import Project from "./component/Projects/Project";
+import Skill from "./component/Skills/Skill";
 import Contact from "./component/Contact/Contact";
 import Footer from "./component/Footer/Footer";
+import Education from "./component/Education/Education.js";
 import { themeContext } from "./Context";
 import { useContext } from "react";
 function App() {
@@ -21,6 +22,7 @@ function App() {
     >
       <Navbar/>
       <Intro/>
+      <Education/>
       <Skill/>
       <Experience/>
       <Project/>

@@ -3,11 +3,12 @@ import React, { useContext } from "react";
 import "./Project.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import lms from "../../img/lms.png";
+import todo from "../../img/todo.jpg";
+import podcast from "../../img/podcast.jpg";
+import resume from "../../img/resumes.png";
 import { themeContext } from "../../Context";
+import { NavLink } from "react-router-dom";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -25,16 +26,20 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={lms} alt="" />
+          <button className="button n-button">View</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={todo} alt="" />
+          <button className="button n-button">View</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={podcast} alt="" />
+          <button className="button n-button">View</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <img src={resume} alt="" />
+          <button className="button n-button">View</button>
         </SwiperSlide>
       </Swiper>
     </div>

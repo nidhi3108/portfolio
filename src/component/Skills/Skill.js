@@ -41,11 +41,11 @@ const Skill=  ()=>{
                           <p><BsPatchCheckFill/>Bootstrap</p>
                           <small className="text-light">Intermediate</small>
                         </article>
-                        <article className="skill_details">
+                        {/* <article className="skill_details">
                       
                           <p>    <BsPatchCheckFill/>Shopify</p>
                           <small className="text-light">Intermediate</small>
-                        </article>
+                        </article> */}
                         <article className="skill_details">
                           
                           <p><BsPatchCheckFill/>Wordpress</p>

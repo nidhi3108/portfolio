@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import './Card.css'
 import { themeContext } from "../../Context";
 
-const Card=({emoji,heading,detail,color})=>{
+const Card=({emoji,heading,detail,description,color})=>{
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -11,9 +11,10 @@ const Card=({emoji,heading,detail,color})=>{
             <img src={emoji} alt="" />
             <span>{heading}</span>
             <span style={{color: darkMode?'white':''}} >{detail}</span>
-            <button className=" c-button">
+            <span style={{color: darkMode?'white':''}} >{description}</span>
+            {/* <button className=" c-button">
                 Learn More
-            </button>
+            </button> */}
           
           </div>
     )
