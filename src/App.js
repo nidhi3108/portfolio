@@ -9,6 +9,7 @@ import Footer from "./component/Footer/Footer";
 import Education from "./component/Education/Education.js";
 import { themeContext } from "./Context";
 import { useContext } from "react";
+import { BrowserRouter, Routes,Route } from "react-router-dom";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -28,7 +29,19 @@ function App() {
       <Project/>
       <Contact/>
       <Footer/>
-   
+      {/* <BrowserRouter> */}
+    {/* <Header/> */}
+    {/* <Routes>
+      <Route element={<Navbar/>} path="/"/>
+      <Route element={<Intro/>} path="/intro"/>
+      <Route element={<Education/>} path="education"/>
+      <Route element={<Skill/>} path="/skill"/>
+      <Route element={<Experience/>} path="/experience"/>
+      <Route element={<Project/>} path="/project"/>
+      <Route element={<Contact/>} path="/contact"/>
+      <Route element={<Footer/>} path="/footer"/>
+    </Routes>
+    </BrowserRouter> */}
     </div>
   
   );
