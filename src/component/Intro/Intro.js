@@ -24,9 +24,9 @@ const Intro = () => {
         <div className="i-left">
           <div className="i-name">
             <span style={{color: darkMode?'white':''}} >Hey! I am</span>
-            <span>XYZ</span>
+            <span>Nidhi Verma</span>
             <span style={{color: darkMode?'white':''}}>
-              Full stack developer with high level of experience in we designing and mern stack developement
+            An accomplished Computer Science graduate with significant experience in WordPress development. Exhibited proficiency in problem-solving and teamwork, consistently delivering top-tier solutions.
             </span>
           </div>
 

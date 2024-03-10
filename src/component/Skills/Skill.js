@@ -71,6 +71,12 @@ const Skill=  ()=>{
                           <p><BsPatchCheckFill/>Mongodb</p>
                           <small className="text-light">Intermediate</small>
                         </article>
+
+                        <article className="skill_details">
+                        
+                          <p><BsPatchCheckFill/>SQL</p>
+                          <small className="text-light">Beginner</small>
+                        </article>
                        
                     </div>
                 </div>

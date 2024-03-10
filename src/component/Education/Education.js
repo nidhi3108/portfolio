@@ -16,11 +16,10 @@ const Education = () => {
         <span style={{color: darkMode?'white':''}}>My </span>
         <span>Education</span>
         <span style={{color: darkMode?'white':''}}>
-          Lorem ipsum dolor sit amet  elit. Molestias
-          reiciendis asperiores eaque voluptatem accusamus velit, vitae
-          <br/>
-          nesciunt neque, molestiae, corrupti ratione! Tempora, rerum impedit.
-          Sequi id maiores mollitia amet. Sed.
+        I earned a B.Tech in Computer Science and Engineering from Dr. APJ Abdul Kalam Technical University in Lucknow in 2023. Previously, I completed my Higher Secondary (12th Grade) in Mahmudabad in 2018, achieving 84%.
+        <br/>
+        I began my academic journey with Secondary (10th Grade) education in Mahmudabad in 2016, securing 91%.
+      
         </span>
         {/* <a href={Resume} download>
 

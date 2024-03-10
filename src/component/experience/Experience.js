@@ -16,11 +16,9 @@ const Experience = () => {
         <span style={{color: darkMode?'white':''}}>My </span>
         <span>Experience</span>
         <span style={{color: darkMode?'white':''}}>
-          Lorem ipsum dolor sit amet  elit. Molestias
-          reiciendis asperiores eaque voluptatem accusamus velit, vitae
+        I began with a MERN stack summer training during college, followed by a 3-month frontend development internship.
           <br/>
-          nesciunt neque, molestiae, corrupti ratione! Tempora, rerum impedit.
-          Sequi id maiores mollitia amet. Sed.
+          Currently, I'm a Junior Frontend Developer at BeeSolver Technology Pvt. Ltd., contributing to innovative solutions.
         </span>
         <a href={Resume} download>
 
