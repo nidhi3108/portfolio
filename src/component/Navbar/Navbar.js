@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className='n-wrapper'>
       <div className="n-left">
-        <div className="n-name">xyz</div>
+        <div className="n-name">Click it</div>
         <Toggle/>
       </div>
       <div className="n-right">

@@ -4,7 +4,7 @@ import heartimoji from "../../img/heartemoji.png";
 import glasses from "../../img/glasses.png";
 import humble from "../../img/humble.png";
 import Card from "../Card/Card";
-import Resume from '../experience/NidhiVermaResume.pdf'
+// import Resume from '../experience/NidhiVermaResume.pdf'
 import { themeContext } from "../../Context";
 const Education = () => {
  
@@ -30,7 +30,7 @@ const Education = () => {
       {/* right side */}
       <div className="rightcard">
         <div style={{left:'14rem'}}>
-          <Card 
+          <Card className="card"
           emoji={heartimoji}
           heading={'B.Tech in CSE'}
           detail={'R.R. Institute Of Modern Technology'}
@@ -40,7 +40,7 @@ const Education = () => {
         </div>
          
         <div style={{top:"12rem",left:"-4rem"}}>
-          <Card 
+          <Card className="card"
           emoji={glasses}
           heading={'Senior Secondary Education'}
           detail={'Sita Inter College'}
@@ -49,7 +49,7 @@ const Education = () => {
 
         </div>
         <div style={{top:"19rem",left:"12rem"}}>
-          <Card 
+          <Card className="card"
           emoji={humble}
           heading={'Secondary Education'}
           detail={'Ram Janki Inter College'}

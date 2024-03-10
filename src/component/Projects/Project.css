@@ -41,3 +41,12 @@
 .portfolio button{
     align-items: center;
 }
+
+@media screen and (max-width:480px) {
+    .swiper-slide.swiper-slide-active {
+      margin-left: 45px;
+    }
+   
+  }
+
+  

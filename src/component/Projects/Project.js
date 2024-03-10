@@ -9,9 +9,45 @@ import podcast from "../../img/podcast.jpg";
 import resume from "../../img/resumes.png";
 import { themeContext } from "../../Context";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const [slidesPerView, setSlidesPerView] = useState(1);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 480) {
+        setSlidesPerView(1);
+      } else if (window.innerWidth < 768) {
+        setSlidesPerView(2);
+      } else if (window.innerWidth < 992) {
+        setSlidesPerView(3);
+      } else if (window.innerWidth < 1200) {
+        setSlidesPerView(4);
+      } else {
+        setSlidesPerView(5);
+      }
+    }
+
+    handleResize(); // Call once to set initial state
+    window.addEventListener("resize", handleResize); 
+   
+  }, []);
+
+  // function handleResize() {
+  //   if (window.innerWidth < 480) {
+  //     setSlidesPerView(1);
+  //   } else if (window.innerWidth < 768) {
+  //     setSlidesPerView(2);
+  //   } else if (window.innerWidth < 992) {
+  //     setSlidesPerView(3);
+  //   } else if (window.innerWidth < 1200) {
+  //     setSlidesPerView(4);
+  //   } else {
+  //     setSlidesPerView(5);
+  //   }
+  // }
   return ( 
     <div className="portfolio" id="portfolio">
       {/* heading */}
@@ -19,11 +55,25 @@ const Portfolio = () => {
       <span>Portfolio</span>
 
       {/* slider */}
-      <Swiper
+      <Swiper 
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
+        // breakpoints={{
+        //   // when window width is >= 480px
+        //   480: {
+        //     slidesPerView: 1
+        //   },
+        //   // when window width is >= 768px
+        //   768: {
+        //     slidesPerView: 2
+        //   },
+        //   // when window width is >= 992px
+        //   992: {
+        //     slidesPerView: 4
+        //   }
+        // }}
       >
         <SwiperSlide>
           <img src={lms} alt="" />

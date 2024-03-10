@@ -4,8 +4,9 @@ import heartimoji from "../../img/heartemoji.png";
 import glasses from "../../img/glasses.png";
 import humble from "../../img/humble.png";
 import Card from "../Card/Card";
-import Resume from '../experience/NidhiVermaResume.pdf'
+import Resume from '../experience/NidhiVerma.pdf'
 import { themeContext } from "../../Context";
+import { NavLink } from "react-router-dom";
 const Experience = () => {
  
   const theme = useContext(themeContext);
@@ -20,10 +21,10 @@ const Experience = () => {
           <br/>
           Currently, I'm a Junior Frontend Developer at BeeSolver Technology Pvt. Ltd., contributing to innovative solutions.
         </span>
-        <a href={Resume} download>
+        <NavLink to={Resume} target="_blank" download>
 
         <button className="button s-button">Download CV</button>
-        </a>
+        </NavLink>
         <div className="blur s-blurl" style={{background:'#ABF1FF94'}}></div>
       </div>
       {/* right side */}

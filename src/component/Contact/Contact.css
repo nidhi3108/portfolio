@@ -64,3 +64,19 @@ textarea{
     }
 
 }    */
+@media screen and (max-width: 480px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+        margin-left: 0;
+    }
+    .c-right .user{
+        width: 20rem;
+    }
+    .w-left{
+        margin: auto;
+    }
+
+} 

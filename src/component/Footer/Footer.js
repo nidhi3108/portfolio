@@ -4,6 +4,8 @@ import Wave from '../../img/wave.png'
 import Insta from  '@iconscout/react-unicons/icons/uil-instagram'
 import Linkedin from  '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from  '@iconscout/react-unicons/icons/uil-github'
+import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 const Footer=()=>{
     return (
      <div className="footer">
@@ -11,8 +13,8 @@ const Footer=()=>{
         <div className="f-content">
           <span>nidhivr310@gmail.com</span>
           <div className="f-icons">
-            <Linkedin color='white' size='3rem'/>
-            <Github color='white' size='3rem'/>
+           <NavLink to="https://www.linkedin.com/in/nidhi3108/" target="_blank"> <Linkedin color='white' size='3rem'/></NavLink>
+          <NavLink to="https://github.com/nidhi3108" target="_blank"><Github color='white' size='3rem'/></NavLink>  
           </div>
         </div>
      </div>
