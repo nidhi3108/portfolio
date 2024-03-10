@@ -5,7 +5,6 @@
     flex-direction: column;
     height: 70vh;
     position: relative;
-
 }
 
 .portfolio span:nth-of-type(1){
@@ -20,7 +19,7 @@
 }
 .portfolio .swiper{
     overflow: visible !important;
-  
+
 }
 .portfolio-slider{
     margin-top: 3rem;
