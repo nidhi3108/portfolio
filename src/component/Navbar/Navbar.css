@@ -2,6 +2,12 @@
     height:10vh;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 90% !important;
+    z-index: 50;
+    background: rgba(238, 210, 255, 0.3);
+    border-radius: 20px !important;
+    padding: 0 7px 0 7px !important;
 }
 
 .n-left{
@@ -9,10 +15,12 @@
     align-items: center;
     display: flex;
     gap: 2rem;
+
 }
 .n-name{
-    font-size: 1.3rem;
+    font-size: 1rem !important;
     font-weight: bold;
+    width: fit-content !important;
 }
 .n-right{
    display: flex;
@@ -26,15 +34,11 @@
 }
 .n-list>ul{
     display: flex;
-    gap: 2rem;
-    margin-right: 4rem;
+    gap: 1.5rem;
 }
 .n-list>ul>li:hover{
     cursor: pointer;
     color: var(--orange);
-}
-.n-button{
-    flex: 2;
 }
 
 @media screen and (max-width:480px) {
