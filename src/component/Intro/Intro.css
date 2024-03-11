@@ -10,7 +10,7 @@
     flex-direction: column;
     gap: 2rem;
 }
-.i-name{
+.i-name {
     display: flex;
     flex-direction: column;
 }
